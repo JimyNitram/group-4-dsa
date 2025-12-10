@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='works.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body style="background-color: #772244;">
+    <div class="container_home">
+        <div class="overlap_bubble"><img src="/static/imgs/bubble.png" alt="Bubble decoration"></div>
+        <div class="overlap_stars"><img src="/static/imgs/stars.png" alt="Star decoration"></div        >
+        
+        <div class="button-container">
+            <a href="/"><button class="button2">Home</button></a>
+            <a href="/groupinfo"><button class="button2">Group Info</button></a>
+            <a href="/works"><button class="button2">Works</button></a>
+        </div>
+    
+        <div class="body-container">
+            <div class='works-page'>
+                <h1 class="works_title">Works of Group 4</h1>
+            
+                <div class="card-container">
+                    <a href="/queue" class="card">
+                        <img src='/static/imgs/Queue.jpg' alt="Work 1">
+                        <div class="overlay">
+                            <h2>Queue</h2>
+                            <p>Simulation of Queue</p>
+                        </div>
+                    </a>
+                
+                    <a href="/deque" class="card">
+                        <img src="/static/imgs/dequeue.jpg" alt="Work 2">
+                        <div class="overlay">
+                            <h2>DE Queue</h2>
+                            <p>Simulation of Double-Ended Queue</p>
+                        </div>
+                        
+                    <a href="/binary-tree" class="card">
+                        <img src='/static/imgs/trees.jpg' alt="Work 3">
+                        <div class="overlay">
+                            <h2>Binary Tree</h2>
+                            <p>Simulation of Binary Tree</p>
+                        </div>
+                        
+                    <a href="/bst" class="card">
+                        <img src="/static/imgs/bst.jpg" alt="Work 4">
+                        <div class="overlay">
+                            <h2>Binary SEARCH Tree</h2>
+                            <p>Simulation of Binary SEARCH Tree</p>
+                        </div>                        
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
